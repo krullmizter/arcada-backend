@@ -9,8 +9,7 @@ A PHP back-end project by me Samuel 👋 for my first year [Arcada](https://www.
 * PHP 
 * MySQL
 
-### Tasks
-#### Improves upon Backend Project 2
+#### Tasks
 * Task 1 | Blog Posts
 * Task 2 | *Reddit Feed* 
 * Task 3 | Input autocomplete
