@@ -1,0 +1,39 @@
+.feed {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 100%;
+
+    &__wrapper {
+        width: 33%;
+
+        @media screen and (max-width: 78rem) and (min-width: 54rem){
+            width: 75%;
+        }
+
+        @media screen and (max-width: 54rem) {
+            width: auto;
+            padding: 5px;
+        }
+
+        &Settings {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: justify;
+                    justify-content: space-between;
+            background-color: $dark-grey;
+            border-radius: $border-rad-sm;
+            padding: 1rem;
+        }
+
+        &Settings,
+        &Posts {
+            margin-bottom: 1rem;
+        }
+    }
+}
+

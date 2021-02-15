@@ -1,0 +1,120 @@
+.navbar {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: $dark-grey;
+    margin-bottom: 2rem;
+    padding: 1rem 5px;
+
+    @media screen and (max-width: 850px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+
+    &__col {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 1;
+                flex-grow: 1;
+        -webkit-box-align: center;
+                align-items: center;
+        width: 33%;
+
+        @media screen and (max-width: 1500px) {
+            width: auto;
+        }
+    }
+
+    &__logo h1 {
+        font-size: 1.25rem;
+        color: $orange;
+        margin: 5px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            background: url("../img/logo.png") no-repeat 100%;
+            background-size: contain;
+        }
+    }
+
+    &__search {
+        -webkit-box-pack: center;
+                justify-content: center;
+
+        input[type="search"] {
+            border: 1px solid $white;
+            border-radius: $border-rad-sm;
+            margin: 2%;
+            width: 100%;
+        }
+
+        input,
+        button {
+            padding: 7.5px 1rem;
+        }
+
+        @media screen and (max-width: 1050px) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
+
+            button {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            margin: 7.5px 0;
+        }
+    }
+
+    &__account {
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+
+        @media screen and (max-width: 1200px) {
+            form {
+                -webkit-box-pack: center;
+                        justify-content: center;
+                display: -webkit-box;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
+            
+            button,
+            a {
+                width: 100%;
+            }
+        }
+
+        > button,
+        a {
+            margin: 5px;
+        }
+    }
+}
+
+.search__info {
+    margin-top: 5px;
+    padding: 7.5px 5px;
+
+    p:first-child {
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}

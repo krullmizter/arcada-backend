@@ -1,0 +1,9 @@
+footer {
+        background-color: $dark-grey;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        flex-shrink: 0;
+        padding: 1rem 0;
+}

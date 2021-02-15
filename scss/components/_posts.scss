@@ -1,0 +1,103 @@
+.post {
+    background-color: $dark-grey;
+    padding: 1rem;
+    border-radius: $border-rad-sm;
+    margin-bottom: 1rem;
+
+    &__head {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+
+        p:not(:last-of-type) {
+            margin-bottom: 7.5px;
+        }
+    }
+
+    &__votes {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+
+        i {
+            font-size: 1rem;
+            margin: 5px;
+        }
+    }
+
+    &__body {
+        margin: 1.25rem 0;
+    }
+
+    &__img {
+        max-width: 25rem;
+        margin-bottom: 5px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__comments {
+        margin-top: 1.25rem;
+
+        h6 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__footer {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+    }
+
+    &__create,
+    &__edit,
+    &__comment {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+        & * {
+            margin-bottom: 1rem;
+        }  
+    }      
+
+    &__createBtn {
+        align-self: center;
+    }
+}
+
+
+.-upvote,
+.-downvote {
+    -webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        color: $orange;    
+    }
+}
+
+.noposts {
+    text-align: center;
+}

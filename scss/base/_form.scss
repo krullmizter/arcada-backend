@@ -1,0 +1,8 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border: 1px solid $white;
+    border-radius: $border-rad-sm;
+    padding: 7.5px 1rem;
+}

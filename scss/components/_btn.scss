@@ -1,0 +1,29 @@
+.btn,
+button {
+    border: 2px solid $orange;
+    border-radius: $border-rad-lg;
+    color: $white;
+    background-color: $transparent;
+    padding: 5px 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        background-color: $orange;
+        border-color: $orange;
+    }
+
+    &-reverse {
+        background-color: $orange;
+
+        &:hover,
+        &:active {
+            background-color: $transparent;
+            border-color: $orange;
+        }
+    }
+}

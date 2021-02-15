@@ -1,0 +1,23 @@
+body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    height: 100vh;
+    background-color: $black;
+    color: $white;
+}
+
+main {
+    -webkit-box-flex: 1;
+            flex: 1 0 auto;
+}
+
+::-moz-selection {
+    background: $light-grey;
+}
+
+::selection {
+    background: $light-grey;
+}
