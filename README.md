@@ -1,4 +1,4 @@
-### Arcada Back-end course assigment
+### University Course | Back-end assigment
 
 A Reddit clone PHP back-end project by me Samuel 👋 for my first year [Arcada](https://www.arcada.fi/en) back-end course assignment.
 
